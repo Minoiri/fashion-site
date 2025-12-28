@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="logo">MINI</div>
+  <nav>
+    <a href="shop.html">SHOP</a>
+    <a href="index.html">HOME</a>
+  </nav>
+</header>
+
+<section class="cart" id="cartList">
+  <!-- 購物車商品由 JS 產生 -->
+</section>
+
+<div class="cart-total" id="cartTotal"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
+
+  const firebaseConfig = {
+    apiKey: "你的",
+    authDomain: "你的",
+    projectId: "你的",
+    storageBucket: "你的",
+    messagingSenderId: "你的",
+    appId: "你的"
+  };
+
+  initializeApp(firebaseConfig);
+</script>
